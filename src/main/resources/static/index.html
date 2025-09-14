@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Download Client</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 12px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>PDF Download Portal</h1>
+
+    <!-- Button to download static PDF from resources folder -->
+    <a class="button" href="http://localhost:8082/api/pdf/folder" target="_blank">
+        View Static PDF
+    </a>
+
+    <!-- Button to download dynamically generated PDF -->
+    <a class="button" href="http://localhost:8082/api/pdf/generate">
+        Download Generated PDF
+    </a>
+
+</body>
+</html>

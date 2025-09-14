@@ -1,9 +1,11 @@
-package com.progressive.pull.pdf_.client;
+package com.progressive.pull;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan(basePackages = "com.progressive.pull")
 public class PdfClientApplication {
 
 	public static void main(String[] args) {
